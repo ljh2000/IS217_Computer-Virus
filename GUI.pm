@@ -66,7 +66,7 @@ sub start_gui {
     $top_box->set_homogeneous( FALSE );
     $eb->add( $top_box );
 
-    $hb->set_title( _( 'Virus Scanner' ) );
+    $hb->set_title( _( 'MLscanner : Team 6\'s Virus Scanner' ) );
     $hb->set_decoration_layout( 'menu,icon:minimize,close' );
     $hb->set_show_close_button( TRUE );
 
@@ -439,7 +439,7 @@ sub add_analysis_panels {
         },
         {   link        => _( 'MLScanner' ),
             description => _( 'our new scan' ),
-            image       => 'MLScanner',
+            image       => 'edit-find',
             button      => FALSE,
         },
     );
@@ -465,7 +465,7 @@ sub add_analysis_panels {
         },
         {   link        => _( 'About Team6' ),
             description => _( "Info of Team6" ),
-            image       => 'gtk-new',
+            image       => 'help-about',
             button      => FALSE,
         },
     );
@@ -767,13 +767,15 @@ sub about_team6 {
     $dialog->set_translator_credits(
         'Please see the credits.md for full listing' );
     $dialog->set_copyright( "\x{a9} Dave M 2004 - 2021" );
-    $dialog->set_program_name( 'ClamTk' );
-    $dialog->set_authors( [ 'Liu Zihan', 'Xia Zichao', 'Li Jinghao', 'Chen Tianrui','Shao Yu'],
+    $dialog->set_program_name( 'MLScanner' );
+    $dialog->set_authors( [ 'Zihan Liu', 'Zichao Xia', 'Jinhao Li', 'Tianrui Chen','Yu Shao'],
                            );
     $dialog->set_comments(
-        _( 'ClamTk is a graphical front-end for Clam Antivirus' ) );
+        _( 'Welcome to Team 6\'s project' ) );
 
     $dialog->run;
     $dialog->destroy;
 }
 1;
+
+
