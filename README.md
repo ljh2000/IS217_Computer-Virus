@@ -14,6 +14,7 @@
   * GUI
   * Icons
 
+Contact me @ljh2000@sjtu.edu.cn
 
 JinhaoLi
 
